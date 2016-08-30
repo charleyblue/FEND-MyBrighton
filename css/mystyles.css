@@ -1,0 +1,139 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Roboto;
+    font-size: 12px;
+    color: #424242;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-around;*/
+}
+
+.box {
+    width: 100%;
+}
+
+.header {
+    background: #dedede;
+    justify-content: space-around;
+    /*min-height: 100px;*/
+}
+
+.header-logo {
+    display: inline-block;
+
+}
+.header-title {
+    display: inline-block;
+
+    vertical-align: 75%;
+}
+i.fa {
+    display: inline-block;
+
+    vertical-align: 50%;
+}
+.nav {
+    background: gray;
+    min-height: 100px;
+}
+
+.hero {
+    background-image: url(../images/dog.jpg);
+    background-size: cover;
+    min-height: 200px;
+}
+
+.top__news {
+    background: orange;
+    min-height: 200px;
+}
+
+.scores {
+    background: aqua;
+    min-height: 200px;
+}
+
+.weather {
+    background: crimson;
+    min-height: 200px;
+}
+
+.recent-news {
+    background: darksalmon;
+    min-height: 200px;
+}
+
+.footer {
+    background: khaki;
+    min-height: 100px;
+}
+
+@media screen and (max-width:450px) {
+    .nav {
+        display: none;
+    }
+}
+@media screen and (min-width:600px) {
+    #container1 {
+        width: 50%;
+    }
+    #container2 {
+        width: 50%;
+    }
+    .header {
+        height: 200px;
+    }
+    .nav {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    #container1 {
+        width: 25%;
+    }
+    #container2 {
+        width: 25%;
+    }
+    .scores {
+        width: 25%;
+        order: -1
+    }
+    .weather {
+        width: 25%;
+
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .container {
+        width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
