@@ -1,3 +1,6 @@
+* {
+    outline: 1px solid blue;
+}
 body, html {
     margin: 0;
     padding: 0;
@@ -37,25 +40,39 @@ ul {
 }
 
 .header {
-    background: #dedede;
-    justify-content: space-around;
+    background: #778899; /*#dedede*/
+    display: flex;
+    justify-content: space-between;
+
     /*min-height: 100px;*/
 }
 
-.header-logo {
-    display: inline-block;
+.header-item1 {
+    /*display: flex;
+    align-items: ;
+    justify-content: flex-start;*/
+}
 
+.header-item2, .header-item3 {
+    /*padding: 0.5em;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-item3 {
+
+}
+.header-logo {
+    /*display: inline-block;*/
 }
 .header-title {
-    display: inline-block;
-
-    vertical-align: 75%;
+    color: #e3e7ea;
+    text-shadow: 2px 2px #171b1e;
 }
 i.fa {
-    display: inline-block;
-
-    vertical-align: 50%;
+    
 }
+
 .nav {
     background: gray;
     min-height: 100px;
